@@ -1,0 +1,8 @@
+<h1 class="center">Memory Match</h1>
+
+<div class="row">
+  <% @pictures.each do |picture| %>
+    <div id="<%= picture %>" class="col s3 mem-card"><div class="pics"><p class="hidden"><%= picture %></p></div></div>
+    <div id="<%= picture %>-match" class="col s3 mem-card"><div class="pics"><p class="hidden"><%= picture %></p></div></div>
+  <% end %>
+</div>
